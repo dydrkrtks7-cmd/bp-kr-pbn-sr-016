@@ -1,273 +1,271 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>잠실 펍 추천 | 노아의 방앗간 블로그</title>
-    <meta name="description" content="잠실에서 진짜 펍을 찾는다면? 노아의 방앗간은 크래프트 비어와 위스키, 따뜻한 분위기까지 갖춘 잠실 펍 추천 1번지. 친구와의 수다, 혼술, 데이트까지 다 되는 곳.">
-    <meta name="keywords" content="잠실 펍 추천, 잠실 펍, 잠실 술집, 잠실 크래프트 비어, 잠실 위스키, 송파구 펍, 잠실 혼술, 잠실 데이트">
-    <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-noir-gold">
-    <link rel="canonical" href="https://jamsil-pub-review.pbn-builder.xyz/blog.html">
-    <meta property="og:title" content="잠실 펍 추천 | 노아의 방앗간 블로그">
-    <meta property="og:description" content="잠실에서 진짜 펍을 찾는다면? 노아의 방앗간은 크래프트 비어와 위스키, 따뜻한 분위기까지 갖춘 잠실 펍 추천 1번지. 친구와의 수다, 혼술, 데이트까지 다 되는 곳.">
-    <style>
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            font-size: 16px;
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: 'Georgia', 'Times New Roman', serif;
-            background-color: #0a0a0a;
-            color: #e0d6c8;
-            line-height: 1.8;
-            min-height: 100vh;
-        }
-        h1, h2, h3, h4 {
-            font-family: 'Avenir', 'Helvetica Neue', sans-serif;
-            font-weight: 300;
-            letter-spacing: 0.05em;
-            color: #d4af37;
-        }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
-            text-transform: uppercase;
-        }
-        h2 {
-            font-size: 2.2rem;
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-            border-bottom: 1px solid #d4af37;
-            padding-bottom: 0.5rem;
-        }
-        h3 {
-            font-size: 1.6rem;
-            margin-top: 2rem;
-            margin-bottom: 0.8rem;
-            color: #c8b89a;
-        }
-        p {
-            margin-bottom: 1.2rem;
-            font-size: 1.05rem;
-            color: #d4c9b8;
-        }
-        a {
-            color: #d4af37;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        a:hover {
-            color: #f0e0b0;
-            text-decoration: underline;
-        }
-        .drop-cap::first-letter {
-            font-size: 3.5rem;
-            float: left;
-            margin-right: 0.5rem;
-            line-height: 1;
-            color: #d4af37;
-            font-weight: bold;
-            font-family: 'Avenir', sans-serif;
-        }
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-        header {
-            background-color: #111;
-            padding: 1.5rem 0;
-            border-bottom: 2px solid #d4af37;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .header-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 300;
-            color: #d4af37;
-            letter-spacing: 0.2em;
-        }
-        nav {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-        nav a {
-            color: #c8b89a;
-            font-size: 0.95rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-        }
-        nav a:hover {
-            color: #d4af37;
-        }
-        .hamburger-menu {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 5px;
-        }
-        .hamburger-menu span {
-            width: 28px;
-            height: 2px;
-            background: #d4af37;
-            display: block;
-        }
-        .tel-link {
-            background: #d4af37;
-            color: #0a0a0a !important;
-            padding: 0.4rem 1rem;
-            border-radius: 4px;
-            font-weight: 500;
-        }
-        .tel-link:hover {
-            background: #f0e0b0;
-            color: #0a0a0a !important;
-            text-decoration: none;
-        }
-        @media (max-width: 768px) {
-            .hamburger-menu {
-                display: flex;
-            }
-            nav {
-                display: none;
-                flex-direction: column;
-                background: #111;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                padding: 1.5rem;
-                gap: 1rem;
-                border-bottom: 2px solid #d4af37;
-            }
-            nav.active {
-                display: flex;
-            }
-            h1 {
-                font-size: 2.2rem;
-            }
-            h2 {
-                font-size: 1.8rem;
-            }
-            .container {
-                padding: 0 1rem;
-            }
-        }
-        main {
-            padding: 3rem 0;
-        }
-        .blog-post {
-            background: #141414;
-            border: 1px solid #2a2a2a;
-            border-radius: 8px;
-            padding: 2.5rem;
-            margin-bottom: 3rem;
-        }
-        .blog-meta {
-            color: #8a7e6e;
-            font-size: 0.9rem;
-            margin-bottom: 1.5rem;
-            font-style: italic;
-        }
-        .blog-meta span {
-            color: #d4af37;
-        }
-        .highlight-box {
-            background: #1e1e1e;
-            border-left: 4px solid #d4af37;
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-radius: 0 8px 8px 0;
-        }
-        .highlight-box p {
-            margin-bottom: 0;
-            color: #e0d6c8;
-        }
-        ul {
-            list-style: none;
-            margin: 1.5rem 0;
-        }
-        ul li {
-            padding: 0.6rem 0;
-            padding-left: 1.5rem;
-            position: relative;
-            color: #d4c9b8;
-        }
-        ul li::before {
-            content: '✦';
-            color: #d4af37;
-            position: absolute;
-            left: 0;
-            font-size: 0.8rem;
-        }
-        .cta-section {
-            text-align: center;
-            margin-top: 3rem;
-            padding: 2rem;
-            background: linear-gradient(145deg, #1a1a1a, #111);
-            border: 1px solid #2a2a2a;
-            border-radius: 8px;
-        }
-        .cta-section a {
-            display: inline-block;
-            background: #d4af37;
-            color: #0a0a0a;
-            padding: 0.8rem 2.5rem;
-            border-radius: 4px;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-top: 1rem;
-        }
-        .cta-section a:hover {
-            background: #f0e0b0;
-            text-decoration: none;
-        }
-        footer {
-            background: #111;
-            padding: 2rem 0;
-            text-align: center;
-            border-top: 1px solid #2a2a2a;
-            color: #6a5e4e;
-            font-size: 0.9rem;
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>잠실 펍 추천 | 노아의 방앗간 블로그</title>
+ <meta name="description" content="잠실에서 진짜 펍을 찾는다면? 노아의 방앗간은 크래프트 비어와 위스키, 따뜻한 분위기까지 갖춘 잠실 펍 추천 1번지. 친구와의 수다, 혼술, 데이트까지 다 되는 곳.">
+ <meta name="keywords" content="잠실 펍 추천, 잠실 펍, 잠실 술집, 잠실 크래프트 비어, 잠실 위스키, 송파구 펍, 잠실 혼술, 잠실 데이트">
+ <link rel="canonical" href="https://jamsil-pub-review.pbn-builder.xyz/blog.html">
+ <meta property="og:title" content="잠실 펍 추천 | 노아의 방앗간 블로그">
+ <meta property="og:description" content="잠실에서 진짜 펍을 찾는다면? 노아의 방앗간은 크래프트 비어와 위스키, 따뜻한 분위기까지 갖춘 잠실 펍 추천 1번지. 친구와의 수다, 혼술, 데이트까지 다 되는 곳.">
+ <style>
+ *, *::before, *::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ html {
+ font-size: 16px;
+ scroll-behavior: smooth;
+ }
+ body {
+ font-family: 'Georgia', 'Times New Roman', serif;
+ background-color: #0a0a0a;
+ color: #e0d6c8;
+ line-height: 1.8;
+ min-height: 100vh;
+ }
+ h1, h2, h3, h4 {
+ font-family: 'Avenir', 'Helvetica Neue', sans-serif;
+ font-weight: 300;
+ letter-spacing: 0.05em;
+ color: #d4af37;
+ }
+ h1 {
+ font-size: 3rem;
+ margin-bottom: 1.5rem;
+ text-transform: uppercase;
+ }
+ h2 {
+ font-size: 2.2rem;
+ margin-top: 2.5rem;
+ margin-bottom: 1rem;
+ border-bottom: 1px solid #d4af37;
+ padding-bottom: 0.5rem;
+ }
+ h3 {
+ font-size: 1.6rem;
+ margin-top: 2rem;
+ margin-bottom: 0.8rem;
+ color: #c8b89a;
+ }
+ p {
+ margin-bottom: 1.2rem;
+ font-size: 1.05rem;
+ color: #d4c9b8;
+ }
+ a {
+ color: #d4af37;
+ text-decoration: none;
+ transition: color 0.3s ease;
+ }
+ a:hover {
+ color: #f0e0b0;
+ text-decoration: underline;
+ }
+ .drop-cap::first-letter {
+ font-size: 3.5rem;
+ float: left;
+ margin-right: 0.5rem;
+ line-height: 1;
+ color: #d4af37;
+ font-weight: bold;
+ font-family: 'Avenir', sans-serif;
+ }
+ .container {
+ max-width: 1100px;
+ margin: 0 auto;
+ padding: 0 2rem;
+ }
+ header {
+ background-color: #111;
+ padding: 1.5rem 0;
+ border-bottom: 2px solid #d4af37;
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ }
+ .header-inner {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+ .logo {
+ font-size: 1.8rem;
+ font-weight: 300;
+ color: #d4af37;
+ letter-spacing: 0.2em;
+ }
+ nav {
+ display: flex;
+ gap: 2rem;
+ align-items: center;
+ }
+ nav a {
+ color: #c8b89a;
+ font-size: 0.95rem;
+ text-transform: uppercase;
+ letter-spacing: 0.1em;
+ }
+ nav a:hover {
+ color: #d4af37;
+ }
+ .hamburger-menu {
+ display: none;
+ flex-direction: column;
+ cursor: pointer;
+ gap: 5px;
+ }
+ .hamburger-menu span {
+ width: 28px;
+ height: 2px;
+ background: #d4af37;
+ display: block;
+ }
+ .tel-link {
+ background: #d4af37;
+ color: #0a0a0a !important;
+ padding: 0.4rem 1rem;
+ border-radius: 4px;
+ font-weight: 500;
+ }
+ .tel-link:hover {
+ background: #f0e0b0;
+ color: #0a0a0a !important;
+ text-decoration: none;
+ }
+ @media (max-width: 768px) {
+ .hamburger-menu {
+ display: flex;
+ }
+ nav {
+ display: none;
+ flex-direction: column;
+ background: #111;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ width: 100%;
+ padding: 1.5rem;
+ gap: 1rem;
+ border-bottom: 2px solid #d4af37;
+ }
+ nav.active {
+ display: flex;
+ }
+ h1 {
+ font-size: 2.2rem;
+ }
+ h2 {
+ font-size: 1.8rem;
+ }
+ .container {
+ padding: 0 1rem;
+ }
+ }
+ main {
+ padding: 3rem 0;
+ }
+ .blog-post {
+ background: #141414;
+ border: 1px solid #2a2a2a;
+ border-radius: 8px;
+ padding: 2.5rem;
+ margin-bottom: 3rem;
+ }
+ .blog-meta {
+ color: #8a7e6e;
+ font-size: 0.9rem;
+ margin-bottom: 1.5rem;
+ font-style: italic;
+ }
+ .blog-meta span {
+ color: #d4af37;
+ }
+ .highlight-box {
+ background: #1e1e1e;
+ border-left: 4px solid #d4af37;
+ padding: 1.5rem;
+ margin: 1.5rem 0;
+ border-radius: 0 8px 8px 0;
+ }
+ .highlight-box p {
+ margin-bottom: 0;
+ color: #e0d6c8;
+ }
+ ul {
+ list-style: none;
+ margin: 1.5rem 0;
+ }
+ ul li {
+ padding: 0.6rem 0;
+ padding-left: 1.5rem;
+ position: relative;
+ color: #d4c9b8;
+ }
+ ul li::before {
+ content: '✦';
+ color: #d4af37;
+ position: absolute;
+ left: 0;
+ font-size: 0.8rem;
+ }
+ .cta-section {
+ text-align: center;
+ margin-top: 3rem;
+ padding: 2rem;
+ background: linear-gradient(145deg, #1a1a1a, #111);
+ border: 1px solid #2a2a2a;
+ border-radius: 8px;
+ }
+ .cta-section a {
+ display: inline-block;
+ background: #d4af37;
+ color: #0a0a0a;
+ padding: 0.8rem 2.5rem;
+ border-radius: 4px;
+ font-weight: 500;
+ text-transform: uppercase;
+ letter-spacing: 0.1em;
+ margin-top: 1rem;
+ }
+ .cta-section a:hover {
+ background: #f0e0b0;
+ text-decoration: none;
+ }
+ footer {
+ background: #111;
+ padding: 2rem 0;
+ text-align: center;
+ border-top: 1px solid #2a2a2a;
+ color: #6a5e4e;
+ font-size: 0.9rem;
+ }
+ </style>
   <meta property="og:url" content="https://jamsil-pub-review.pbn-builder.xyz/blog.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-    <header>
-        <div class="container header-inner">
-            <div class="logo">노아의 방앗간</div>
-            <div class="hamburger-menu" onclick="document.querySelector('nav').classList.toggle('active')">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <nav>
-                <a href="/">홈</a>
-                <a href="/menu">메뉴</a>
-                <a href="/blog">블로그</a>
-                <a href="/about">소개</a>
-                <a href="/contact">오시는 길</a>
-                <a href="tel:02-1234-5678" class="tel-link">02-1234-5678</a>
-            </nav>
-        </div>
-    </header>
+ <header>
+ <div class="container header-inner">
+ <div class="logo">노아의 방앗간</div>
+ <div class="hamburger-menu" onclick="document.querySelector('nav').classList.toggle('active')">
+ <span></span>
+ <span></span>
+ <span></span>
+ </div>
+ <nav>
+ <a href="/">홈</a>
+ <a href="/menu">메뉴</a>
+ <a href="/blog">블로그</a>
+ <a href="/about">소개</a>
+ <a href="/contact">오시는 길</a>
+ <a href="tel:02-1234-5678" class="tel-link">02-1234-5678</a>
+ </nav>
+ </div>
+ </header>
 
 <main class="container">
 <article class="blog-post">
