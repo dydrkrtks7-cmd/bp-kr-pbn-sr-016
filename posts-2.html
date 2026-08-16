@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (2/2) · kr-pbn-sr-016</title>
+  <meta name="description" content="kr-pbn-sr-016에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://jamsil-pub-review.pbn-builder.xyz/posts-2.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* Reset & Base */
+ *, *::before, *::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ html {
+ font-size: 100%;
+ scroll-behavior: smooth;
+ }
+ body {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+ background: #0b0a07;
+ color: #e8e0d0;
+ line-height: 1.6;
+ min-height: 100vh;
+ padding: 0 1.5rem;
+ }
+ /* Typography */
+ h1, h2, h3, h4 {
+ font-weight: 400;
+ letter-spacing: -0.02em;
+ color: #f2ebe0;
+ }
+ h1 {
+ font-size: 2.8rem;
+ line-height: 1.1;
+ margin-bottom: 1.2rem;
+ font-weight: 300;
+ border-left: 4px solid #d4af37;
+ padding-left: 1.2rem;
+ }
+ h2 {
+ font-size: 2rem;
+ margin: 2.5rem 0 1rem 0;
+ border-bottom: 1px solid #2d2a22;
+ padding-bottom: 0.4rem;
+ }
+ h3 {
+ font-size: 1.4rem;
+ margin: 1.8rem 0 0.8rem 0;
+ color: #d4af37;
+ }
+ p {
+ margin-bottom: 1.2rem;
+ font-size: 1.0625rem;
+ color: #d6cebc;
+ }
+ a {
+ color: #d4af37;
+ text-decoration: none;
+ transition: color 0.2s ease;
+ }
+ a:hover {
+ color: #f5e7b2;
+ text-decoration: underline;
+ }
+ /* Drop Cap */
+ .drop-cap::first-letter {
+ font-size: 3.6rem;
+ float: left;
+ line-height: 1;
+ margin-right: 0.4rem;
+ margin-top: 0.2rem;
+ font-weight: 300;
+ color: #d4af37;
+ }
+ /* Layout */
+ .container {
+ max-width: 760px;
+ margin: 0 auto;
+ padding: 2rem 0 4rem 0;
+ }
+ /* Header */
+ header {
+ padding: 1.8rem 0 0.5rem 0;
+ border-bottom: 1px solid #2d2a22;
+ margin-bottom: 2.8rem;
+ }
+ .header-inner {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-wrap: wrap;
+ }
+ .logo a {
+ font-size: 1.5rem;
+ font-weight: 300;
+ letter-spacing: 0.1em;
+ color: #f2ebe0;
+ text-decoration: none;
+ background: #1e1b16;
+ padding: 0.3rem 1rem;
+ border-radius: 30px;
+ border: 1px solid #3d382e;
+ }
+ .logo a:hover {
+ background: #2d2820;
+ color: #d4af37;
+ text-decoration: none;
+ }
+ .nav-present {
+ display: flex;
+ align-items: center;
+ gap: 1.8rem;
+ }
+ .nav-present a {
+ font-size: 0.95rem;
+ color: #b5ab98;
+ letter-spacing: 0.03em;
+ padding: 0.2rem 0;
+ border-bottom: 1px solid transparent;
+ }
+ .nav-present a:hover {
+ color: #d4af37;
+ border-bottom-color: #d4af37;
+ text-decoration: none;
+ }
+ .hamburger-menu {
+ display: none;
+ background: none;
+ border: none;
+ cursor: pointer;
+ padding: 0.4rem;
+ }
+ .hamburger-menu span {
+ display: block;
+ width: 26px;
+ height: 2px;
+ background: #d4af37;
+ margin: 5px 0;
+ border-radius: 2px;
+ }
+ .tel-link {
+ background: #1e1b16;
+ padding: 0.3rem 1.2rem;
+ border-radius: 40px;
+ border: 1px solid #d4af37;
+ font-weight: 400;
+ color: #d4af37;
+ font-size: 0.9rem;
+ transition: all 0.2s;
+ }
+ .tel-link:hover {
+ background: #d4af37;
+ color: #0b0a07;
+ text-decoration: none;
+ }
+ /* Info page specific */
+ .info-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 2rem 1.5rem;
+ margin: 2.5rem 0 2rem 0;
+ }
+ .info-card {
+ background: #14120e;
+ border: 1px solid #2d2a22;
+ border-radius: 20px;
+ padding: 1.6rem 1.5rem;
+ transition: border-color 0.2s;
+ }
+ .info-card:hover {
+ border-color: #d4af37;
+ }
+ .info-card h3 {
+ margin: 0 0 0.5rem 0;
+ font-size: 1.2rem;
+ color: #d4af37;
+ letter-spacing: 0.02em;
+ }
+ .info-card p {
+ font-size: 0.98rem;
+ margin-bottom: 0.3rem;
+ color: #cbc1ae;
+ }
+ .info-card .label {
+ color: #9a8f7a;
+ font-size: 0.8rem;
+ text-transform: uppercase;
+ letter-spacing: 0.08em;
+ }
+ .highlight-badge {
+ display: inline-block;
+ background: #d4af37;
+ color: #0b0a07;
+ font-size: 0.75rem;
+ padding: 0.2rem 1rem;
+ border-radius: 30px;
+ font-weight: 500;
+ letter-spacing: 0.04em;
+ margin-bottom: 0.6rem;
+ }
+ .faq-item {
+ padding: 1.2rem 0;
+ border-bottom: 1px solid #2d2a22;
+ }
+ .faq-item:last-child {
+ border-bottom: none;
+ }
+ .faq-q {
+ font-weight: 500;
+ color: #f2ebe0;
+ margin-bottom: 0.4rem;
+ font-size: 1.1rem;
+ }
+ .faq-a {
+ color: #b5ab98;
+ padding-left: 0.5rem;
+ font-size: 0.98rem;
+ }
+ .map-placeholder {
+ background: #1a1712;
+ border-radius: 20px;
+ padding: 2.5rem 1.5rem;
+ text-align: center;
+ border: 1px dashed #3d382e;
+ margin: 2rem 0 1.5rem 0;
+ color: #9a8f7a;
+ font-size: 0.95rem;
+ }
+ .map-placeholder strong {
+ color: #d4af37;
+ }
+ hr {
+ border: none;
+ border-top: 1px solid #2d2a22;
+ margin: 2.2rem 0;
+ }
+ /* responsive-768 */
+ @media (max-width: 768px) {
+ body {
+ padding: 0 1rem;
+ }
+ h1 {
+ font-size: 2rem;
+ padding-left: 0.8rem;
+ }
+ h2 {
+ font-size: 1.6rem;
+ }
+ .header-inner {
+ flex-direction: column;
+ align-items: flex-start;
+ gap: 0.8rem;
+ }
+ .nav-present {
+ flex-wrap: wrap;
+ gap: 0.8rem 1.2rem;
+ margin-top: 0.5rem;
+ }
+ .nav-present a {
+ font-size: 0.9rem;
+ }
+ .hamburger-menu {
+ display: block;
+ position: absolute;
+ top: 1.8rem;
+ right: 1.5rem;
+ }
+ .info-grid {
+ grid-template-columns: 1fr;
+ gap: 1.2rem;
+ }
+ .info-card {
+ padding: 1.2rem;
+ }
+ .container {
+ padding: 1rem 0 3rem 0;
+ }
+ header {
+ position: relative;
+ }
+ }
+ @media (max-width: 480px) {
+ h1 {
+ font-size: 1.7rem;
+ }
+ .tel-link {
+ font-size: 0.8rem;
+ padding: 0.2rem 0.9rem;
+ }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (2/2) · kr-pbn-sr-016">
+  <meta property="og:description" content="kr-pbn-sr-016에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://jamsil-pub-review.pbn-builder.xyz/posts-2.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <div class="header-inner container" style="max-width: 760px; margin: 0 auto; padding: 0;">
+ <div class="logo">
+ <a href="/">노아의 방앗간</a>
+ </div>
+ <div class="nav-present">
+ <a href="/">홈</a>
+ <a href="/info">정보</a>
+ <a href="/menu">메뉴</a>
+ <a href="/story">이야기</a>
+ <a href="/contact" class="tel-link">0507-1314-1212</a>
+ </div>
+ <button class="hamburger-menu" aria-label="메뉴 열기">
+ <span></span><span></span><span></span>
+ </button>
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 38개 · 2/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0465.html">잠실 펍 추천 리스트와 알아두어야 할 셔츠룸 사이트 활용법</a>
+        <p class="post-item__summary">친구들과 오랜만에 잠실에서 모임을 계획하다 보면 익숙한 장소들을 두고 어디로 가야 할지 고민하는 경우가 많습니다. 가벼운 분위기의 맥주 한잔을 즐기려다가도 조금 더 색다른 유흥 문화나 서비스의 깊이</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0287.html">잠실 펍 추천 리스트와 공덕 셔츠룸 추천정보 예약 시 실패하는 지점</a>
+        <p class="post-item__summary">잠실 펍 추천 리스트를 찾던 분들이 다른 지역의 유사 업장을 탐색할 때 흔히 저지르는 실수가 있습니다. 특히 정보의 겉모습만 보고 성급히 예약하다가 낭패를 보는 사례가 빈번합니다. 처음 방문을 계획</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0288.html">잠실 펍 추천 리스트와 비교하는 연남 유흥 추천정보 가이드</a>
+        <p class="post-item__summary">잠실 펍 추천 정보를 검색하다가도 문득 홍대 인근의 분위기를 찾아 나서는 이들이 많습니다. 특히 연남동은 골목마다 숨겨진 공간이 많아 처음 방문하는 사람에게는 다소 복잡하게 느껴질 수 있습니다. 성</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0289.html">잠실 펍 추천 고객이 알아야 할 마곡 가라오케 추천정보 노하우</a>
+        <p class="post-item__summary">직장 동료들과 업무를 마친 뒤 마곡으로 이동해 즐거운 시간을 계획하는 사례가 빈번합니다. 처음 가보는 지역인 잠실 펍 추천을 검색하던 익숙함을 뒤로하고, 신도시인 마곡의 낯선 지리를 마주하면 당황하</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0290.html">잠실 펍 추천과 비교하는 마곡 유흥 추천정보 시간대 전략</a>
+        <p class="post-item__summary">많은 이들이 유흥은 무조건 밤늦게 시작해야 한다고 생각하지만, 이는 사실과 다른 경우가 많습니다. 잠실 펍 추천 정보를 찾던 사람들도 마곡 지역의 특성을 알게 되면 시간대 선택의 중요성을 금방 깨닫</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0291.html">잠실 펍 추천 리스트와 함께 살펴보는 합정 노래방 추천정보 가이드</a>
+        <p class="post-item__summary">잠실 펍 추천 장소를 물색하던 분들도 주말이면 합정 지역의 유흥 문화를 즐기기 위해 발걸음을 옮기곤 합니다. 노래방을 선택할 때는 방문 인원수를 가장 먼저 고려해야 하며 이는 공간의 규모와 음향 설</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0292.html">잠실 펍 추천 찾다가 고민될 때 확인하는 연남 클럽 추천정보 선택 기준</a>
+        <p class="post-item__summary">주말 저녁 잠실 펍 추천 장소를 검색하다가 연남 지역의 역동적인 분위기가 궁금해진 적이 있으신가요. 클럽을 선택할 때는 음악의 장르와 분위기가 자신의 성향과 일치하는지를 가장 먼저 판단해야 합니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0293.html">잠실 펍 추천 검색 후 합정 셔츠룸 추천정보 신뢰도 확인하는 3단계 절차</a>
+        <p class="post-item__summary">잠실 펍 추천 정보를 찾던 도중 합정 셔츠룸에 대해 알게 되었다면 정보를 선별하는 과정이 필수적입니다. 첫 번째 단계로 인터넷상의 정보가 단순 광고성인지 실제 이용객의 경험인지 구별하는 분석이 필요</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0294.html">잠실 펍 추천 고민될 때 비교하는 공덕 가라오케 추천정보</a>
+        <p class="post-item__summary">가벼운 분위기의 잠실 펍 추천 정보를 찾다가도 때로는 독립된 공간에서 음악을 즐기고 싶어질 때가 있습니다. 이런 경우 공덕 지역의 시설들은 대안으로 고려할 수 있는 매력적인 선택지가 됩니다. 분위기</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0295.html">잠실 펍 추천 검색보다 중요한 상수 마사지 추천정보</a>
+        <p class="post-item__summary">잠실 펍 추천 정보를 찾아 화려한 밤을 보내는 것도 좋지만, 지친 몸을 먼저 돌보는 것이 우선일 때가 있습니다. 많은 사람들이 제대로 된 휴식처를 찾지 못해 소중한 시간을 낭비하곤 합니다. 특히 검</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0296.html">잠실 펍 추천 말고 알아두는 망원 노래방 추천정보</a>
+        <p class="post-item__summary">잠실 펍 추천 글을 읽다 보면 가끔은 노래와 함께 에너지를 발산하고 싶어질 때가 있습니다. 망원 지역에서 노래방을 방문하기 전에 확인해야 할 요소들은 쾌적한 환경을 유지하는 데 큰 도움이 됩니다. </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0297.html">잠실 펍 추천을 찾는 분들을 위한 홍대 노래방 추천정보 가이드</a>
+        <p class="post-item__summary">최근 잠실 펍 추천을 검색하다가 홍대 지역까지 방문 범위를 넓히는 이들이 늘고 있습니다. 번화가 특성상 익숙하지 않은 곳에서는 목적지를 찾는 것조차 쉽지 않은 것이 사실입니다. 처음 방문하는 초행자</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-1.html">잠실 펍 가이드</a>
+        <p class="post-item__summary">잠실 지역은 다양한 펍과 주점들이 밀집해 있는 대표적인 유흥 중심지입니다. 직장인들이 퇴근 후 가볍게 들르기 좋은 곳에서부터 친구들과 모임을 갖기에 적절한 분위기까지, 목적과 취향에 따라 선택의 폭</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-2.html">잠실 펍 추천 정보 안내</a>
+        <p class="post-item__summary">잠실区域内에서 펍을 선택할 때는 해당 지역의 분위기와 접근성을 먼저 고려하는 것이 중요합니다. 넓은 상권 내에서 적합한 공간을 찾기 위해서는 다양한 시각적인 정보를 참고하는 것이 일반적입니다. 특히</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-1.html">잠실 펍 추천 정보 안내</a>
+        <p class="post-item__summary">잠실 지역에서 펍을 알아보는 분들을 위해 기본 정보를 안내합니다. 잠실은 다양한 음료 문화가 있는 지역으로, 술안주와 함께 여유를 즐기는 공간을 찾고 계신 분들이 많습니다. 펍을 방문하시기 전에는 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-2.html">잠실 펍 추천</a>
+        <p class="post-item__summary">잠실 지역에서 펍을 알아보는 분들은 대체로 조용한 분위기에서 대화를 즐기거나, 가볍게 음료를 마시며 휴식을 취하는 공간을 선호하는 경향이 있습니다. 펍이란 주류를 중심으로 하는 휴게 공간을 의미하며</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-3.html">잠실 지역 펍 정보를 찾는 당신을 위한 안내</a>
+        <p class="post-item__summary">잠실 지역에서 펍을 찾는 경우, 단순히 매장 위치뿐만 아니라 주변 환경과 접근성을 종합적으로 고려하는 것이 중요합니다. 지역 내 다양한 펍들은 각각 독특한 분위기를 보유하고 있으며, 이는 방문자의 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-001-1or09w9.html">잠실 펍 추천</a>
+        <p class="post-item__summary">잠실은 화려한 도시 야경과 호수 산책로가 어우러져 저녁 무렵 맥주나 음료를 즐기기에 좋은 분위기를 자랑하는 곳입니다. 퇴근길 가볍게 들르거나 주말에 친구 및 연인과 함께 여유로운 시간을 보내기에 최</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <span class="pager__current">2</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
